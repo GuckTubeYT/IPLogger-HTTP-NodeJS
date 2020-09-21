@@ -16,7 +16,7 @@ var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() ||
   console.log('IP-Logger : ' + ipAddress)
   console.log('Method : ' + req.method)
   console.log('Route : ' + req.url)
-  console.log('Headers : ' + req.headers['user-agent'])
+  console.log('User Agent : ' + req.headers['user-agent'])
   console.log('Host/IP : ' + req.headers['host'])
   console.log('Connection : ' + req.headers['connection'])
   console.log('Accept : ' + req.headers['accept'])
